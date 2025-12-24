@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Active Your Potential - Método Oficial</title>
+    <title>Active Your Potential - Official Method</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         }
 
         body {
-            background-color: #ebebeb;
+            background-color: #f0f0f0;
             color: #333;
             line-height: 1.5;
         }
@@ -22,64 +22,72 @@
             max-width: 650px;
             margin: 20px auto;
             background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+            border-radius: 4px;
+            overflow: hidden;
         }
 
         header {
             background-color: #ba261a;
             color: white;
-            padding: 15px;
+            padding: 18px;
             text-align: center;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
         }
 
         .main-content {
-            padding: 25px;
+            padding: 30px;
         }
 
         h1 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             text-align: center;
             color: #111;
-            margin-bottom: 20px;
-            line-height: 1.2;
+            margin-bottom: 25px;
+            line-height: 1.3;
         }
 
         .intro-text {
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.92rem;
+            margin-bottom: 18px;
             text-align: justify;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin: 20px 0 10px 0;
-            color: #ba261a;
-        }
-
-        p {
-            font-size: 0.88rem; /* Letras menores como solicitado */
-            margin-bottom: 12px;
             color: #444;
         }
 
+        h2 {
+            font-size: 1.15rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin: 25px 0 12px 0;
+            color: #ba261a;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 0.88rem; /* Smaller, detailed font as requested */
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .module-grid {
+            margin: 20px 0;
+        }
+
         .module-box {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
+            background: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-left: 4px solid #ba261a;
         }
 
         .module-title {
             font-weight: bold;
-            font-size: 0.9rem;
-            margin-bottom: 5px;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
             display: block;
             color: #222;
         }
@@ -91,34 +99,43 @@
 
         ul li {
             font-size: 0.85rem;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+        .benefits-section {
+            background: #fff9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
         }
 
         .price-section {
             text-align: center;
-            padding: 30px 10px;
-            background: #fcfcfc;
-            border: 2px dashed #ddd;
-            margin: 20px 0;
+            padding: 35px 15px;
+            background: #fafafa;
+            border: 2px dashed #ccc;
+            margin: 30px 0;
         }
 
         .old-price {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             text-decoration: line-through;
-            color: #999;
+            color: #a0a0a0;
         }
 
         .new-price {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: bold;
-            color: #222;
+            color: #1a1a1a;
             display: block;
+            margin: 5px 0;
         }
 
-        .installments {
-            font-size: 0.9rem;
+        .currency-note {
+            font-size: 0.85rem;
             color: #27ae60;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .cta-button {
@@ -126,35 +143,39 @@
             background-color: #28a745;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 22px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
-            border-radius: 5px;
-            margin: 20px 0;
-            transition: 0.3s;
+            font-size: 1.2rem;
+            border-radius: 6px;
+            margin: 25px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
         }
 
         .cta-button:hover {
             background-color: #218838;
-            transform: scale(1.02);
+            transform: translateY(-2px);
         }
 
         footer {
-            background: #f1f1f1;
-            padding: 20px;
+            background: #f8f8f8;
+            padding: 25px;
             font-size: 0.75rem;
-            color: #777;
+            color: #888;
             text-align: center;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #eee;
+            line-height: 1.6;
         }
 
-        .guarantee {
+        .guarantee-box {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            margin-top: 15px;
+            gap: 12px;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #444;
         }
     </style>
 </head>
@@ -166,63 +187,69 @@
     </header>
 
     <div class="main-content">
-        <h1>Como Dominar o Algoritmo do YouTube e Gerar Receita com Vídeos Virais</h1>
+        <h1>Master the YouTube Algorithm and Generate Revenue with Viral Content</h1>
 
         <p class="intro-text">
-            O mercado de conteúdo digital mudou. Hoje, não é mais sobre "postar e torcer". Existe uma ciência por trás dos vídeos que alcançam milhões de visualizações e, consequentemente, geram faturamento constante. O <strong>Active Your Potential</strong> foi desenhado para abrir a "caixa preta" dessas métricas.
+            Digital content creation has evolved. It’s no longer about "uploading and hoping" for the best. There is a precise science behind videos that reach millions of views and translate into steady revenue. <strong>Active Your Potential</strong> was designed to decode these metrics for you.
         </p>
 
-        <h2>A Estrutura do Método</h2>
-        <p>Este guia foi dividido em etapas lógicas para que qualquer pessoa, mesmo sem experiência prévia em edição ou câmeras, possa aplicar imediatamente:</p>
+        <h2>The Curriculum Overview</h2>
+        <p>This comprehensive guide is structured into logical phases, ensuring that anyone—regardless of prior technical experience—can implement the strategies immediately:</p>
 
-        <div class="module-box">
-            <span class="module-title">Módulo 1: A Engenharia da Viralização</span>
-            <p>Entenda por que o YouTube recomenda um vídeo e ignora outro. Vamos analisar o CTR (Taxa de Cliques) e a Retenção de forma técnica mas simplificada.</p>
+        <div class="module-grid">
+            <div class="module-box">
+                <span class="module-title">Phase 1: Viral Engineering</span>
+                <p>Discover exactly why YouTube recommends certain videos while ignoring others. We analyze CTR (Click-Through Rate) and Audience Retention using a data-driven yet easy-to-understand approach.</p>
+            </div>
+
+            <div class="module-box">
+                <span class="module-title">Phase 2: High-Yield Niche Selection</span>
+                <p>Not all views are created equal. We teach you how to identify niches with high advertiser demand (CPM) where the audience is more likely to engage with offers and products.</p>
+            </div>
+
+            <div class="module-box">
+                <span class="module-title">Phase 3: Meta-Data Optimization</span>
+                <ul>
+                    <li>Crafting magnetic titles based on psychological triggers.</li>
+                    <li>Tags and Descriptions optimized for the Google/YouTube search crawlers.</li>
+                    <li>Thumbnail strategies designed to maximize visual attention.</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="module-box">
-            <span class="module-title">Módulo 2: Nichos de Alta Rentabilidade</span>
-            <p>Nem toda visualização vale o mesmo. Ensinamos você a escolher nichos onde o anunciante paga mais e onde a audiência é mais propensa a consumir produtos.</p>
+        <div class="benefits-section">
+            <p><strong>What’s Included in Your Purchase:</strong></p>
+            <p>You will receive instant access to the full high-resolution digital guide, daily posting checklists, and a curated list of free AI tools for high-end editing and content ideation.</p>
         </div>
 
-        <div class="module-box">
-            <span class="module-title">Módulo 3: Otimização e Metadados</span>
-            <ul>
-                <li>Criação de títulos magnéticos baseados em gatilhos mentais.</li>
-                <li>Tags e Descrições que conversam com o robô do Google.</li>
-                <li>Estratégias de miniaturas (thumbnails) que forçam o clique.</li>
-            </ul>
-        </div>
-
-        <h2>O que você recebe ao garantir seu acesso:</h2>
-        <p>Ao se inscrever hoje, você terá acesso imediato ao material completo em PDF de alta qualidade, checklists de postagem e um guia de ferramentas gratuitas para edição e inteligência artificial.</p>
-
-        <p><strong>Por que custa apenas U$ 29,00?</strong> Nosso objetivo é democratizar o acesso a essa informação. Queremos que este seja o seu primeiro passo em uma jornada lucrativa no digital, criando uma relação de confiança para futuros treinamentos avançados.</p>
+        <p><strong>Why only $29.00?</strong> Our goal is to make high-level digital marketing education accessible. We want this to be the first step in your journey, building a relationship of trust for our future advanced programs.</p>
 
         <div class="price-section">
-            <span class="old-price">Preço Original: U$ 97,00</span>
-            <span class="new-price">HOJE: U$ 29,00</span>
-            <span class="installments">Pagamento único. Acesso vitalício.</span>
+            <span class="old-price">Regular Price: $97.00</span>
+            <span class="new-price">$29.00</span>
+            <span class="currency-note">One-time payment. Lifetime access.</span>
         </div>
 
         <a href="https://www.google.com" class="cta-button">
-            SIM! QUERO ACESSAR O ACTIVE YOUR POTENTIAL
+            YES! I WANT ACCESS TO ACTIVE YOUR POTENTIAL
         </a>
 
-        <div class="guarantee">
-            <img src="https://cdn-icons-png.flaticon.com/512/4766/4766928.png" width="30" alt="Garantia">
-            <span><strong>Garantia de Satisfação:</strong> 7 dias para reembolso total.</span>
+        <div class="guarantee-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/4766/4766928.png" width="25" alt="Guarantee">
+            <span><strong>100% Satisfaction Guarantee:</strong> 7-day full refund policy.</span>
         </div>
     </div>
 
     <footer>
-        <p><strong>Aviso Legal:</strong> Este site não faz parte do Google ou do Facebook. Além disso, este site NÃO é endossado pelo Google ou Facebook de nenhuma maneira.</p>
-        <p style="margin-top: 10px;">
-            Ao adquirir o produto através da plataforma <strong>Perfectpay</strong>, seus dados estão 100% seguros e criptografados. 
-            Resultados financeiros dependem exclusivamente da aplicação das estratégias ensinadas e do esforço individual. 
-            Não existem promessas de enriquecimento ilícito ou rápido.
+        <p><strong>Legal Disclaimer:</strong> This site is not a part of the Google or Facebook website. Additionally, This site is NOT endorsed by Google or Facebook in any way. FACEBOOK and GOOGLE are trademarks of their respective owners.</p>
+        
+        <p style="margin-top: 12px;">
+            By purchasing through the <strong>Perfectpay</strong> platform, your data is 100% secure and encrypted. 
+            Financial results depend entirely on the application of the strategies taught and individual effort. 
+            We do not make promises of "get rich quick" schemes or guaranteed earnings.
         </p>
-        <p style="margin-top: 15px;">© 2024 ACTIVE YOUR POTENTIAL - Todos os direitos reservados.</p>
+        
+        <p style="margin-top: 15px;">© 2024 ACTIVE YOUR POTENTIAL - All Rights Reserved.</p>
     </footer>
 </div>
 
